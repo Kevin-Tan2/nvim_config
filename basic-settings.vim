@@ -16,8 +16,11 @@ set tabstop=2
 set shiftwidth=2
 
 " Set a vertical line as a column marker 
-set colorcolumn=80
+set colorcolumn=81
 highlight ColorColumn ctermbg=7
+
+" Set a text width auto wrap
+set textwidth=80
 
 " Terminal shortcut use <C-w>N
 nnoremap <C-w>N :botright terminal<CR>
