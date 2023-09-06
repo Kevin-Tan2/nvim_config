@@ -12,4 +12,5 @@ source ~/.config/nvim/plugins/coc.vim
 "source ~/.config/nvim/plugins/omnisharp.vim
 source ~/.config/nvim/plugins/toggle-term.vim
 source ~/.config/nvim/plugins/magma.vim
-source ~/.config/nvim/plugins/catppuccin.vim
+"source ~/.config/nvim/colorschemes/catppuccin.vim
+source ~/.config/nvim/colorschemes/everforest.vim

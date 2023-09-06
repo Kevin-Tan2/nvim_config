@@ -49,6 +49,9 @@ Plug 'dccsillag/magma-nvim', {'do': ':UpdateRemotePlugins'}
 " Catppuccin colorscheme
 Plug 'catppuccin/nvim'
 
+" Everforest colorscheme
+Plug 'sainnhe/everforest'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
