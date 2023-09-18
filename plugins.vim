@@ -20,13 +20,18 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Autocompletion Plugin
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Clangd C/C++ LSP
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 " Git Tracking Plugin
 Plug 'lewis6991/gitsigns.nvim'
 
 " Omnisharp (C# language server)
-Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OmniSharp/omnisharp-vim'
 
 " Status 
 Plug 'itchyny/lightline.vim'
@@ -43,14 +48,13 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 " GOYO Markdown editor 
 Plug 'junegunn/goyo.vim'
 
-" Jupyter Notebook 
-Plug 'dccsillag/magma-nvim', {'do': ':UpdateRemotePlugins'}
-
 " Catppuccin colorscheme
 Plug 'catppuccin/nvim'
 
 " Everforest colorscheme
 Plug 'sainnhe/everforest'
+
+Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
