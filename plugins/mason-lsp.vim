@@ -4,6 +4,7 @@ lua << EOF
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.clangd.setup {}
+lspconfig.cmake.setup{}
 
 
 -- Global mappings.
@@ -46,7 +47,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['clangd'].setup {
+lspconfig.clangd.setup {
+  capabilities = capabilities
+}
+lspconfig.cmake.setup {
   capabilities = capabilities
 }
 EOF
