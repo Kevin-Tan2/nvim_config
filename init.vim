@@ -16,3 +16,6 @@ source ~/.config/nvim/plugins/magma.vim
 source ~/.config/nvim/plugins/mason-lsp.vim
 source ~/.config/nvim/colorschemes/everforest.vim
 source ~/.config/nvim/plugins/vimwiki.vim
+source ~/.config/nvim/plugins/cmake.vim
+source ~/.config/nvim/plugins/nvim_cmp.vim
+
