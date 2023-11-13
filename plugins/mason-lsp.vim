@@ -3,9 +3,28 @@ lua require("mason-lspconfig").setup()
 lua << EOF
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.clangd.setup {}
-lspconfig.cmake.setup{}
 
+-- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+lspconfig.clangd.setup {
+  filetypes = {'c', 'cpp'},
+  capabilities = capabilities
+}
+lspconfig.cmake.setup {
+  filetypes = {'CMakeLists.txt', 'cmake'},
+  capabilities = capabilities
+}
+lspconfig.vimls.setup {
+  capabilities = capabilities
+}
+lspconfig.lua_ls.setup {
+  capabilities = capabilities
+}
+lspconfig.omnisharp.setup {
+  capabilities = capabilities
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -44,13 +63,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
--- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-lspconfig.clangd.setup {
-  capabilities = capabilities
-}
-lspconfig.cmake.setup {
-  capabilities = capabilities
-}
+
 EOF
