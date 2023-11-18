@@ -21,6 +21,14 @@ highlight ColorColumn ctermbg=7
 
 " Set a text width auto wrap
 set textwidth=80
+set breakindent
+set breakindentopt=shift:2
+set linebreak
+
+" Set a softwrap
+set fo?
+set fo+=t
+set fo-=l
 
 " Terminal shortcut use <C-w>N
 nnoremap <C-w>N :botright terminal<CR>

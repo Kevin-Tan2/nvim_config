@@ -33,6 +33,9 @@ Plug 'lewis6991/gitsigns.nvim'
 " Omnisharp (C# language server)
 "Plug 'OmniSharp/omnisharp-vim'
 
+" Tmux navigator
+Plug 'christoomey/vim-tmux-navigator'
+
 " Status 
 Plug 'itchyny/lightline.vim'
 
