@@ -9,7 +9,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 lspconfig.clangd.setup {
-  filetypes = {'c', 'cpp'},
+  filetypes = {'c', 'cpp', 'dts', 'dtsi', 'overlay'},
   capabilities = capabilities
 }
 lspconfig.cmake.setup {
@@ -23,6 +23,9 @@ lspconfig.lua_ls.setup {
   capabilities = capabilities
 }
 lspconfig.omnisharp.setup {
+  capabilities = capabilities
+}
+lspconfig.spectral.setup {
   capabilities = capabilities
 }
 
