@@ -66,6 +66,8 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
+
+" ===================== nvim cmp related ================================
 Plug 'hrsh7th/nvim-cmp'
 
 " For vsnip users.
@@ -83,6 +85,13 @@ Plug 'hrsh7th/vim-vsnip'
 " For snippy users.
 " Plug 'dcampos/nvim-snippy'
 " Plug 'dcampos/cmp-snippy'
+" =======================================================================
+
+" GDB debug
+Plug 'sakhnik/nvim-gdb'
+
+" VimTex (latex)
+Plug 'lervag/vimtex'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.

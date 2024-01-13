@@ -8,10 +8,12 @@ syntax on
 "      \ 'syntax': 'markdown', 'ext': '.md'} 
 let learning_wiki = {}
 let learning_wiki['path'] = '~/learning_wiki/'
+let external_wiki = { 'path': '~/documents/degree/mathematics/', 
+      \'ext': '.wiki' }
 
-let g:vimwiki_list = [{}, learning_wiki]
+let g:vimwiki_list = [{}, learning_wiki, external_wiki]
 
 
 
-let g:vimwiki_global_ext = 0
+let g:vimwiki_global_ext = 1
 

@@ -8,6 +8,7 @@ source ~/.config/nvim/basic-settings.vim
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
+source ~/.config/nvim/plugins/vimtex.vim
 "source ~/.config/nvim/plugins/coc.vim
 "source ~/.config/nvim/plugins/omnisharp.vim
 source ~/.config/nvim/plugins/toggle-term.vim
