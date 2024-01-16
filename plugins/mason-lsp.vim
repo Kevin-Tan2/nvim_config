@@ -28,6 +28,9 @@ lspconfig.omnisharp.setup {
 lspconfig.spectral.setup {
   capabilities = capabilities
 }
+lspconfig.ltex.setup {
+  capabilities = capabilities
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

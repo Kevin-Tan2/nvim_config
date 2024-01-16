@@ -27,6 +27,6 @@ let g:vimtex_compiler_method = 'latexrun'
 let maplocalleader = ","
 
 " Keybindings
-nmap \ll :VimTexCompile<CR>
-nmap \lv :VimTexView<CR>
+nmap \ll :VimtexCompile<CR>
+nmap \lv :VimtexView<CR>
 
