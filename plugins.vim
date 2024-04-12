@@ -32,6 +32,7 @@ Plug 'lewis6991/gitsigns.nvim'
 
 " Omnisharp (C# language server)
 "Plug 'OmniSharp/omnisharp-vim'
+Plug 'Hoffs/omnisharp-extended-lsp.nvim'
 
 " Tmux navigator
 Plug 'christoomey/vim-tmux-navigator'
