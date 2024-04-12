@@ -30,6 +30,9 @@ Plug 'neovim/nvim-lspconfig'
 " Git Tracking Plugin
 Plug 'lewis6991/gitsigns.nvim'
 
+" Git diff view Plugin
+Plug 'sindrets/diffview.nvim'
+
 " Omnisharp (C# language server)
 "Plug 'OmniSharp/omnisharp-vim'
 Plug 'Hoffs/omnisharp-extended-lsp.nvim'
