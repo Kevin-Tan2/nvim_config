@@ -35,9 +35,13 @@ lspconfig.spectral.setup {
   capabilities = capabilities
 }
 lspconfig.ltex.setup {
+  filetypes = {'tex'},
   capabilities = capabilities
 }
 lspconfig.pyright.setup {
+  capabilities = capabilities
+}
+lspconfig.rust_analyzer.setup {
   capabilities = capabilities
 }
 

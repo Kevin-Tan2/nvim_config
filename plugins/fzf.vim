@@ -9,3 +9,8 @@ nnoremap <C-p> :Files<CR>
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <C-A-p> :Ag<CR>
 
+" using Ctrl-/ to toggle the preview window
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   "rg --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview('right', 'alt-/'), <bang>0)

@@ -6,6 +6,7 @@ set rnu
 set nu
 set ic
 set mouse=a
+set nowrap
 
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz

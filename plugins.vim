@@ -22,10 +22,13 @@ Plug 'junegunn/fzf.vim'
 " Autocompletion Plugin
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Clangd C/C++ LSP
+" General LSP Package Manager
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
+
+" rust lsp
+Plug 'rust-lang/rust.vim'
 
 " Git Tracking Plugin
 Plug 'lewis6991/gitsigns.nvim'
@@ -96,6 +99,12 @@ Plug 'sakhnik/nvim-gdb'
 
 " VimTex (latex)
 Plug 'lervag/vimtex'
+
+" VimGrepper replace pattern across multiple files
+Plug 'mhinz/vim-grepper'
+
+" vim grammar check plugins
+Plug 'rhysd/vim-grammarous'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
