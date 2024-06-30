@@ -8,6 +8,8 @@ set ic
 set mouse=a
 set nowrap
 
+set encoding=UTF-8
+
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 

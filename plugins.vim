@@ -10,7 +10,13 @@ call plug#begin()
 " Make sure you use single quotes
 
 " On-demand loading
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+" Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+" nerdtree replacement
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/glyph-palette.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " Using a non-default branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
@@ -66,7 +72,7 @@ Plug 'sainnhe/everforest'
 
 Plug 'vimwiki/vimwiki'
 
-Plug 'cdelledonne/vim-cmake'
+"Plug 'cdelledonne/vim-cmake'
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'

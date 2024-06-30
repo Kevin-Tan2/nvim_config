@@ -6,14 +6,15 @@
 "colorscheme slate
 source ~/.config/nvim/basic-settings.vim
 source ~/.config/nvim/plugins.vim
-source ~/.config/nvim/plugins/nerdtree.vim
+"source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/fern.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/vimtex.vim
 "source ~/.config/nvim/plugins/coc.vim
 "source ~/.config/nvim/plugins/omnisharp.vim
 source ~/.config/nvim/plugins/toggle-term.vim
 "source ~/.config/nvim/plugins/magma.vim
-source ~/.config/nvim/colorschemes/catppuccin.vim
+"source ~/.config/nvim/colorschemes/catppuccin.vim
 source ~/.config/nvim/plugins/mason-lsp.vim
 "source ~/.config/nvim/colorschemes/everforest.vim
 source ~/.config/nvim/plugins/vimwiki.vim
