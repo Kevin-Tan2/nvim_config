@@ -10,4 +10,5 @@ let g:fern#renderer = "nerdfont"
 " Devicon
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 
-nmap <C-t> :Fern . -drawer<CR>
+nmap <C-t> :Fern . -drawer -width=50 -toggle<CR>
+nmap <C-f> :Fern . -drawer -width=50 -reveal=%<CR>
