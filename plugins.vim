@@ -28,6 +28,9 @@ Plug 'junegunn/fzf.vim'
 " Autocompletion Plugin
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Multi-cursor
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
 " General LSP Package Manager
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
