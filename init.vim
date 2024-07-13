@@ -5,6 +5,9 @@
 
 "colorscheme slate
 source ~/.config/nvim/basic-settings.vim
+source ~/.config/nvim/syntax/dts.vim
+source ~/.config/nvim/fdetect/dts.vim
+source ~/.config/nvim/fdetect/xaml.vim
 source ~/.config/nvim/plugins.vim
 "source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fern.vim

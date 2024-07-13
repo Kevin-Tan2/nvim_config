@@ -38,8 +38,3 @@ nnoremap <C-w>N :botright terminal<CR>
 
 " Following keybind is to always open the terminal at the bottom
 nnoremap <leader>t <C-w>b :bel terminal<CR>
-
-source ~/.config/nvim/syntax/dts.vim
-source ~/.config/nvim/fdetect/dts.vim
-
-source ~/.config/nvim/fdetect/xaml.vim
