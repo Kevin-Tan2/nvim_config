@@ -1,1 +1,1 @@
-VMTheme iceblue
+let g:VM_theme = 'iceblue'
