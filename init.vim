@@ -3,25 +3,32 @@
 "let &packpath=&runtimepath
 "source ~/.vimrc
 
-"colorscheme slate
-source ~/.config/nvim/basic-settings.vim
-source ~/.config/nvim/syntax/dts.vim
-source ~/.config/nvim/fdetect/dts.vim
-source ~/.config/nvim/fdetect/xaml.vim
-source ~/.config/nvim/plugins.vim
-"source ~/.config/nvim/plugins/nerdtree.vim
-source ~/.config/nvim/plugins/fern.vim
-source ~/.config/nvim/plugins/fzf.vim
-source ~/.config/nvim/plugins/vimtex.vim
-"source ~/.config/nvim/plugins/coc.vim
-"source ~/.config/nvim/plugins/omnisharp.vim
-source ~/.config/nvim/plugins/toggle-term.vim
-"source ~/.config/nvim/plugins/magma.vim
-"source ~/.config/nvim/colorschemes/catppuccin.vim
-source ~/.config/nvim/plugins/mason-lsp.vim
-"source ~/.config/nvim/colorschemes/everforest.vim
-source ~/.config/nvim/plugins/vimwiki.vim
-source ~/.config/nvim/plugins/cmake.vim
-source ~/.config/nvim/plugins/nvim_cmp.vim
-source ~/.config/nvim/plugins/vim-grepper.vim
+if has('win32')
+  let prefix = "$HOME/AppData/Local/nvim"
+else
+  let prefix = "$HOME/.config/nvim"
+
+endif
+
+exec "source " . prefix . "/basic-settings.vim"
+exec "source " . prefix . "/syntax/dts.vim"
+exec "source " . prefix . "/fdetect/dts.vim"
+exec "source " . prefix . "/fdetect/xaml.vim"
+exec "source " . prefix . "/plugins.vim"
+"exec "source " . prefix . "/plugins/nerdtree.vim"
+exec "source " . prefix . "/plugins/fern.vim"
+exec "source " . prefix . "/plugins/fzf.vim"
+exec "source " . prefix . "/plugins/vimtex.vim"
+exec "source " . prefix . "/plugins/visual-multi.vim"
+"exec "source " . prefix . "/plugins/coc.vim"
+"exec "source " . prefix . "/plugins/omnisharp.vim"
+"exec "source " . prefix . "/plugins/omnisharp-extended.vim"
+exec "source " . prefix . "/plugins/toggle-term.vim"
+"exec "source " . prefix . "/plugins/magma.vim"
+exec "source " . prefix . "/colorschemes/catppuccin.vim"
+exec "source " . prefix . "/plugins/mason-lsp.vim"
+"exec "source " . prefix . "/colorschemes/everforest.vim"
+exec "source " . prefix . "/plugins/vimwiki.vim"
+exec "source " . prefix . "/plugins/cmake.vim"
+exec "source " . prefix . "/plugins/nvim_cmp.vim"
 
