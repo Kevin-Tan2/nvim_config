@@ -83,6 +83,12 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 
+
+" ============================== Harpoon ================================
+Plug 'nvim-lua/plenary.nvim'
+Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
+
+
 " ===================== nvim cmp related ================================
 Plug 'hrsh7th/nvim-cmp'
 

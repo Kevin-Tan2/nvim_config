@@ -7,7 +7,7 @@ nnoremap <C-p> :Files<CR>
 
 " After installing the silver search (equivalent to Ctrl+shift+f in vscode)
 let g:ackprg = 'ag --nogroup --nocolor --column'
-nnoremap <C-A-p> :Ag<CR>
+nnoremap <C-A-p> :Rg<CR>
 
 " using Ctrl-/ to toggle the preview window
 command! -bang -nargs=* Rg
