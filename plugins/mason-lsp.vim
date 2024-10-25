@@ -83,4 +83,30 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
+
+-- Install formatter.nvim or use existing formatter plugin
+require('formatter').setup({
+  logging = false,
+  filetype = {
+    cpp = {
+      function()
+        return {
+          exe = "clang-format",
+          args = {"--assume-filename", vim.api.nvim_buf_get_name(0)},
+          stdin = true,
+        }
+      end
+    },
+    c = {
+      function()
+        return {
+          exe = "clang-format",
+          args = {"--assume-filename", vim.api.nvim_buf_get_name(0)},
+          stdin = true,
+        }
+      end
+    }
+  }
+})
+
 EOF

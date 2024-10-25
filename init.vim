@@ -9,7 +9,6 @@ else
   let prefix = "$HOME/.config/nvim"
 endif
 
-colorscheme slate
 exec "source " . prefix . "/basic-settings.vim"
 exec "source " . prefix . "/syntax/dts.vim"
 exec "source " . prefix . "/fdetect/dts.vim"
@@ -32,4 +31,9 @@ exec "source " . prefix . "/plugins/vimwiki.vim"
 exec "source " . prefix . "/plugins/cmake.vim"
 exec "source " . prefix . "/plugins/nvim_cmp.vim"
 exec "source " . prefix . "/plugins/harpoon.vim"
+exec "source " . prefix . "/plugins/vimspector.vim"
+exec "source " . prefix . "/plugins/treesitter.vim"
+colorscheme catppuccin
+"colorscheme dracula
+"colorscheme elflord
 

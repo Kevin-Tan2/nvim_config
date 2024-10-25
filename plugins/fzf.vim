@@ -1,9 +1,11 @@
 " To load the fuzzy finder
-nnoremap <C-p> :Files<CR>
+nnoremap <leader>ff :Files<CR>
 " To open the new file in horizontal press <C-x>
 " To open the new file in vertcal press <C-v>
 " To open the new file in the new window press <C-t>
 " To find over buffer :Buffers
+nnoremap <leader>fh :History<CR>
+nnoremap <leader>fb :Buffers<CR>
 
 " After installing the silver search (equivalent to Ctrl+shift+f in vscode)
 let g:ackprg = 'ag --nogroup --nocolor --column'

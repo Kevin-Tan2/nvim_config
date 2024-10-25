@@ -15,8 +15,9 @@ nnoremap <C-d> <C-d>zz
 
 " To set indentation character
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
+set signcolumn=auto:2
 
 " Set a vertical line as a column marker 
 "set colorcolumn=81
@@ -25,7 +26,7 @@ set shiftwidth=2
 " Set a text width auto wrap
 set textwidth=80
 set breakindent
-set breakindentopt=shift:2
+set breakindentopt=shift:4
 set linebreak
 
 " Set a softwrap

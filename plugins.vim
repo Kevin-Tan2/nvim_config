@@ -35,6 +35,12 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'mhartington/formatter.nvim'
+
+" Tree sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Context to display current function name
+Plug 'nvim-treesitter/nvim-treesitter-context', {'do': ':TSUpdate'}
 
 " rust lsp
 Plug 'rust-lang/rust.vim'
@@ -72,6 +78,9 @@ Plug 'catppuccin/nvim'
 
 " Everforest colorscheme
 Plug 'sainnhe/everforest'
+
+" dracula theme
+Plug 'dracula/vim'
 
 Plug 'vimwiki/vimwiki'
 
@@ -112,6 +121,9 @@ Plug 'hrsh7th/vim-vsnip'
 " GDB debug
 Plug 'sakhnik/nvim-gdb'
 
+" VimSpector debug viewer
+Plug 'puremourning/vimspector'
+
 " VimTex (latex)
 Plug 'lervag/vimtex'
 
@@ -120,6 +132,9 @@ Plug 'mhinz/vim-grepper'
 
 " vim grammar check plugins
 Plug 'rhysd/vim-grammarous'
+
+" Zen mode
+Plug 'folke/zen-mode.nvim'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
