@@ -15,6 +15,7 @@ exec "source " . prefix . "/fdetect/dts.vim"
 exec "source " . prefix . "/fdetect/xaml.vim"
 exec "source " . prefix . "/plugins.vim"
 "exec "source " . prefix . "/plugins/nerdtree.vim"
+exec "source " . prefix . "/plugins/lightline.vim"
 exec "source " . prefix . "/plugins/fern.vim"
 exec "source " . prefix . "/plugins/fzf.vim"
 exec "source " . prefix . "/plugins/vimtex.vim"
@@ -28,12 +29,9 @@ exec "source " . prefix . "/plugins/toggle-term.vim"
 exec "source " . prefix . "/plugins/mason-lsp.vim"
 "exec "source " . prefix . "/colorschemes/everforest.vim"
 exec "source " . prefix . "/plugins/vimwiki.vim"
+exec "source " . prefix . "/plugins/treesitter.vim"
 exec "source " . prefix . "/plugins/cmake.vim"
 exec "source " . prefix . "/plugins/nvim_cmp.vim"
 exec "source " . prefix . "/plugins/harpoon.vim"
 exec "source " . prefix . "/plugins/vimspector.vim"
-exec "source " . prefix . "/plugins/treesitter.vim"
-colorscheme catppuccin
-"colorscheme dracula
-"colorscheme elflord
-
+colorscheme dracula

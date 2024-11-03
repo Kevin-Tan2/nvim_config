@@ -61,6 +61,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " Status 
 Plug 'itchyny/lightline.vim'
 
+Plug 'tpope/vim-fugitive'
+
 " giving vim multiple cursors 
 Plug 'mg979/vim-visual-multi'
 
