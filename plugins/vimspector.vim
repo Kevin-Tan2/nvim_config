@@ -8,6 +8,7 @@ nmap <space>dr :VimspectorReset<CR>
 
 nmap <space>b :call vimspector#ToggleBreakpoint()<CR>
 nmap <space>dg <Plug>VimspectorGoToCurrentLine<CR>
+nmap <space><F9> <Plug>VimspectorToggleConditionalBreakpoint<CR>
 
 " mnemonic 'di' = 'debug inspect' (pick your own, if you prefer!)
 
