@@ -50,8 +50,8 @@ set fo-=l
 " Terminal shortcut use <C-w>N
 nnoremap <C-w>N :botright terminal<CR>
 
-" Following keybind is to always open the terminal at the bottom
-nnoremap <leader>t <C-w>b :bel terminal<CR>
+"" Following keybind is to always open the terminal at the bottom
+"nnoremap <leader>t <C-w>b :bel terminal<CR>
 
 nnoremap <M-z> :set invwrap<CR>
 
