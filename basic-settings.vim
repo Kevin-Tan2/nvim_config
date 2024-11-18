@@ -10,6 +10,7 @@ set nowrap
 
 set encoding=UTF-8
 
+set termguicolors
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 

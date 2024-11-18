@@ -11,4 +11,4 @@ let g:fern#renderer = "nerdfont"
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 nmap <C-t> :Fern . -drawer -width=50 -toggle<CR>
-nmap <C-f> :Fern . -drawer -width=50 -reveal=%<CR>
+nmap <C-f> :Fern . -drawer -width=50 -toggle -reveal=%<CR>
