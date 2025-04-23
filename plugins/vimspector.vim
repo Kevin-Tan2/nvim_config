@@ -1,12 +1,12 @@
 nmap <F5> :call vimspector#Launch()<CR>
-nmap <space>n :call vimspector#StepOver()<CR>
+nmap <space>n <Plug>VimspectorStepOver<CR>
 nmap <space>si :call vimspector#StepInto()<CR>
 nmap <space>so :call vimspector#StepOut()<CR>
 nmap <space>c :call vimspector#Continue()<CR>
 nmap <space>st :call vimspector#Stop()<CR>
 nmap <space>dr :VimspectorReset<CR>
 
-nmap <space>b :call vimspector#ToggleBreakpoint()<CR>
+nmap <space>b <Plug>VimspectorToggleBreakpoint<CR>
 nmap <space>dg <Plug>VimspectorGoToCurrentLine<CR>
 nmap <space><F9> <Plug>VimspectorToggleConditionalBreakpoint<CR>
 

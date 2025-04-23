@@ -35,3 +35,8 @@ exec "source " . prefix . "/plugins/nvim_cmp.vim"
 exec "source " . prefix . "/plugins/harpoon.vim"
 exec "source " . prefix . "/plugins/vimspector.vim"
 colorscheme dracula
+
+highlight Normal guibg=none
+"highlight NonText guibg=none
+"highlight Normal ctermbg=none
+"highlight NonText ctermbg=none

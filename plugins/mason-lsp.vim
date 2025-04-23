@@ -109,4 +109,13 @@ require('formatter').setup({
   }
 })
 
+-- local omnisharp_server_location = os.getenv('OMNISHARP_LANGUAGE_SERVER')
+-- 
+-- local pid = vim.fn.getpid()
+-- require('lspconfig').omnisharp.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   cmd = { omnisharp_server_location, "--languageserver" , "--hostPID", tostring(pid) },
+-- })
+-- 
 EOF
