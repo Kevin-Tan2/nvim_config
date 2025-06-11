@@ -1,5 +1,13 @@
 ## Getting Started
 
+
+### Pre-Requisite
+
+Make sure that you have installed [vim-plug](https://github.com/junegunn/vim-plug).
+* (in the future I might migrate to `packer.nvim` so it will be integrated with LUA)
+
+### Adding the config
+
 For windows user, copy the following command to powershell
 ```
 mv nvim_config ~\AppData\Local\nvim
@@ -9,11 +17,6 @@ For Linux user, copy the following command to bash
 ```
 mv nvim_config ~/.config/nvim
 ```
-
-### Pre-Requisite
-
-Make sure that you have installed [vim-plug](https://github.com/junegunn/vim-plug).
-* (in the future I might migrate to `packer.nvim` so it will be integrated with LUA)
 
 ### Initial start-up
 
