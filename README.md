@@ -41,7 +41,7 @@ enable the LSP.
 
 ### Default Keymaps - General
 
-default <leader> is backslash '\\' key
+default `<leader>` key is backslash `\` key
 
 | Mode | Map            | Description                                                 |
 |------|----------------|-------------------------------------------------------------|
