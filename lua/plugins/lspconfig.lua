@@ -1,5 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
+    ensure_installed = { "omnisharp", "clangd" },
     automatic_enable = false
 }
 
@@ -23,7 +24,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         for _, client in ipairs(vim.lsp.get_clients()) do
             print("Attaching LSP", client.name)
             if client.name == "omnisharp" then
-                local opts_ext = { buffer = ev.buf, remap = false}
+                local opts_ext = { buffer = ev.buf, remap = false }
                 local omnisharp_extended = require('omnisharp_extended')
                 vim.keymap.set('n', 'gd', omnisharp_extended.lsp_definition, opts_ext)
                 vim.keymap.set('n', 'gi', omnisharp_extended.lsp_implementation, opts_ext)
@@ -41,10 +42,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
         vim.keymap.set('n', '[d', function()
-            vim.diagnostic.jump({count=1, float=true})
+            vim.diagnostic.jump({ count = 1, float = true })
         end, opts)
         vim.keymap.set('n', ']d', function()
-            vim.diagnostic.jump({count=-1, float=true})
+            vim.diagnostic.jump({ count = -1, float = true })
         end, opts)
         vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
         vim.keymap.set('n', '<space>k', vim.lsp.buf.signature_help, opts)
