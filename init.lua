@@ -2,6 +2,7 @@ local vim_config_path = vim.fn.stdpath("config")
 
 -- Load the basic settings
 require("config.basic-settings")
+require("config.basic-settings.maps")
 
 -- Load all of the ftdetect configs
 local ftdetect_path = vim_config_path .. "/lua/config/ftdetect"
@@ -25,14 +26,16 @@ for _, file in ipairs(vim.fn.readdir(plugin_path)) do
 end
 
 vim.cmd.colorscheme("dracula")
-vim.cmd([[
+
+vim.cmd [[
 
 highlight Normal guibg=none
+"highlight Normal guibg='#1A191E'
 "highlight NonText guibg=none
 "highlight Normal ctermbg=none
 "highlight NonText ctermbg=none
 
-]])
+]]
 
 
 -- Load all LSP's in "lua/config/lsp"

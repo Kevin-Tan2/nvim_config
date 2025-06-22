@@ -1,7 +1,7 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
     ensure_installed = { "omnisharp", "clangd" },
-    automatic_enable = false
+    automatic_enable = true
 }
 
 -- Use LspAttach autocommand to only map the following keys
