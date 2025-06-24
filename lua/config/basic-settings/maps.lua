@@ -29,12 +29,22 @@ vim.keymap.set({ 'n', 'v', 'x', 't' }, '<leader>tt', function()
         }
 
         function term_window.is_open(self)
-            return GetWindowFromBufferName(self.buf) ~= nil;
+            if self.buf == nil then
+                return false
+            end
+
+            local buf_name = api.nvim_buf_get_name(self.buf)
+            return GetWindowFromBufferName(buf_name) ~= nil;
         end
     end
 
     if term_window:is_open() == true then
-        local terminal_win = GetWindowFromBufferName(terminal_buf_name)
+        if term_window.buf == nil then
+            return false
+        end
+
+        local buf_name = api.nvim_buf_get_name(term_window.buf)
+        local terminal_win = GetWindowFromBufferName(buf_name)
         if terminal_win == nil then return end
 
         term_window.height = api.nvim_win_get_height(terminal_win);
