@@ -9,7 +9,7 @@ function GetWindowFromBufferName(name)
     for _, win in ipairs(wins) do
         local buf = api.nvim_win_get_buf(win)
         local buf_name = api.nvim_buf_get_name(buf)
-        if string.find(buf_name, name) then
+        if buf_name ==  name then
             return win;
         end
     end
@@ -19,7 +19,6 @@ end
 
 vim.keymap.set({ 'n', 'v', 'x', 't' }, '<leader>tt', function()
     local api = vim.api
-    local terminal_buf_name = "term://"
 
     local term_window = vim.g.termWindow
     if term_window == nil then
@@ -66,7 +65,7 @@ vim.keymap.set({ 'n', 'v', 'x', 't' }, '<leader>tt', function()
     vim.cmd.resize(term_window.height)
     vim.cmd.startinsert()
     vim.g.termWindow = term_window
-end, { remap = true })
+end)
 
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
