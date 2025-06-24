@@ -1,20 +1,8 @@
-function GetBufferFromBufferName(name)
-    local api = vim.api
-    local wins = api.nvim_tabpage_list_wins(api.nvim_get_current_tabpage())
-
-    for _, win in ipairs(wins) do
-        local buf = api.nvim_win_get_buf(win)
-        local buf_name = api.nvim_buf_get_name(buf)
-        vim.print(buf_name);
-        if string.find(buf_name, name) then
-            return buf;
-        end
+function GetWindowFromBufferName(name)
+    if name == nil then
+        return nil
     end
 
-    return nil;
-end
-
-function GetWindowFromBufferName(name)
     local api = vim.api
     local wins = api.nvim_tabpage_list_wins(api.nvim_get_current_tabpage())
 
@@ -38,13 +26,14 @@ vim.keymap.set({ 'n', 'v', 'x', 't' }, '<leader>tt', function()
         term_window = {
             buf = nil,
             height = 10,
-            is_open = function()
-                return GetWindowFromBufferName(terminal_buf_name) ~= nil;
-            end
         }
+
+        function term_window.is_open(self)
+            return GetWindowFromBufferName(self.buf) ~= nil;
+        end
     end
 
-    if term_window.is_open() == true then
+    if term_window:is_open() == true then
         local terminal_win = GetWindowFromBufferName(terminal_buf_name)
         if terminal_win == nil then return end
 
@@ -61,7 +50,7 @@ vim.keymap.set({ 'n', 'v', 'x', 't' }, '<leader>tt', function()
         vim.cmd.term()
         term_window.buf = api.nvim_get_current_buf();
     else
-        vim.cmd.buffer(terminal_buf_name)
+        vim.cmd.buffer(term_window.buf)
     end
 
     vim.cmd.resize(term_window.height)
