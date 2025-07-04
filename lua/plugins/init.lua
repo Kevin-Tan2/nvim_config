@@ -88,3 +88,19 @@ Plug('ThePrimeagen/harpoon', { ['branch'] = 'harpoon2' })
 Plug('christoomey/vim-tmux-navigator')
 
 vim.call('plug#end')
+
+
+
+
+
+local vim_config_path = vim.fn.stdpath("config")
+
+-- Load all the modules in this directory
+local plugin_path = vim_config_path .. "/lua/plugins"
+for _, file in ipairs(vim.fn.readdir(plugin_path)) do
+    if file:match("%.lua$") and file ~= "global.lua" and file ~= "init.lua" then
+        local module_name = "plugins." .. file:gsub("%.lua$", "")
+        require(module_name)
+    end
+end
+

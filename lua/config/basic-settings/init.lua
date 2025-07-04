@@ -44,3 +44,5 @@ vim.opt.formatoptions:append('t')
 vim.opt.formatoptions:remove('l')
 
 
+
+require("config.basic-settings.maps")
