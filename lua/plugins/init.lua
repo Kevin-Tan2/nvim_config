@@ -40,6 +40,9 @@ Plug('mg979/vim-visual-multi', { ['branch'] = 'master' })
 -- terminal emulator
 Plug('akinsho/toggleterm.nvim', { ['tag'] = '*' })
 
+-- Log syntax highlight
+Plug('fei6409/log-highlight.nvim')
+
 -- General LSP Package Manager
 Plug('mason-org/mason.nvim')
 Plug('mason-org/mason-lspconfig.nvim')
@@ -103,4 +106,3 @@ for _, file in ipairs(vim.fn.readdir(plugin_path)) do
         require(module_name)
     end
 end
-
