@@ -6,11 +6,15 @@ require('telescope').setup {
                 ["<C-j>"] = actions.move_selection_next,
                 ["<C-k>"] = actions.move_selection_previous,
             }
+        },
+        preview = {
+            treesitter = false
         }
     },
     pickers = {
         find_files = {
-            hidden = true
+            hidden = true,
+            --no_ignore = true,
         },
         colorscheme = {
             enable_preview = true
